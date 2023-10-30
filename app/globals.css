@@ -1,0 +1,223 @@
+
+/* NAVBAR */
+.logo{
+  height: auto !important;
+  width: auto !important;
+}
+.navbar_main_div{
+  border-bottom: 2px solid black ;
+  
+}
+@media only screen and (max-width: 300px) {
+  .menu_navbar {
+    display: none !important;
+  }
+  .div_page {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .booking_main_div {
+    /* background-color: aqua; */
+    grid-column: 1  !important;
+    width: 100% !important;
+  }
+  
+  .map_main_div {
+    grid-column: 1 !important;
+    /* background-color: blue; */
+  }
+}
+.home_h2,.history_h2,.help_h2{
+  padding: 5px;
+  cursor: pointer;
+  transition: all;
+}
+.home_h2:hover
+,.history_h2:hover,.help_h2:hover{
+  background-color: rgba(128, 128, 128, 0.256);
+  border-radius: 5px;
+}
+
+
+
+
+/* page.tsz */
+.div_page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.booking_main_div {
+  
+  grid-column: 1 / 2;
+}
+
+.map_main_div {
+  /* margin-top: 50px; */
+  grid-column: 2 / 4;
+  /* background-color: blue; */
+}
+
+
+/* booking */
+.booking_main{
+padding: 10px;
+
+}
+.booking_headinng{
+  font-size: 20px;
+  font-weight: bold
+}
+
+
+
+
+/* autocamplete adderes */
+.aca_input_field{
+  background-color:white;
+  padding: 1px;
+  border: 1px  solid;
+  width: 100%;
+    height: 25px;
+    /* border-color: yellow;   */
+    border-radius: 5px;
+}
+
+.aca_input_field:focus{
+  border: 3px solid yellow !important;
+  outline-offset: 0px !important;
+  outline: none;
+}
+
+.h4_suggetion{
+  cursor: pointer;
+
+}
+.h4_suggetion:hover{
+  background-color: gray;
+
+}
+
+
+
+/* Cars */
+.cars_heading{
+  margin-top: 5px;
+font-weight: bold;
+}
+
+
+.cars_list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100% !important;
+
+}
+
+
+
+
+@media only screen and (max-width: 300px) {
+  
+  
+  .cars_image {
+    grid-column: 1  !important;
+    width: 100% !important;
+  }
+  
+  
+}
+
+
+.cars_image{
+  margin: 5px;
+  padding: 5px;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+.cars_image:hover{
+  border-color: rgb(255, 255, 13);
+  outline: none;
+cursor: pointer;
+}
+.active_remove_event{
+margin: 5px;
+padding: 5px;
+border: 2px red solid;
+border-radius: 5px;
+}
+
+.img_{
+  width: 100% !important;
+  height: 60px !important;
+}
+
+/* cards payment method */
+.cards_heading{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cards_img_div{
+
+  display: grid;
+  grid-template-columns:repeat(5,1fr) !important;
+  grid-gap: 1rem;
+}
+.cards_img{
+  width: auto  !important;
+  height: 50px !important;
+} 
+
+.d3_{
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.d3_:hover{
+  scale: 1.2;
+
+  transition: all;
+}
+
+.active_remove{
+  border: 2px red solid;
+border-radius: 5px;
+}
+
+
+.btn_book{
+  height: 40px;
+  width: 405px;
+  background-color: yellow;
+margin-top: 20px;
+
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: black;
+  font-weight: 500;
+}
+
+
+/* mapvbox */
+.heading_mapbox
+{
+
+
+  font-size: 20px;
+  font-weight: bold
+}
+
+
+.marker_location{
+  height: 110px;
+
+  width: 100px;
+}
